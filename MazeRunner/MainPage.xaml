@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FirstApp"
+             x:Class="FirstApp.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+        <BoxView BindingContext="{x:Reference Slider}"
+            Color="Green"
+            Opacity="{Binding Value}"
+                 >
+            
+        </BoxView>
+
+        <Button BindingContext="{x:Reference Slider}"
+            
+            Text= "{Binding Value, StringFormat=' {0:F2}'}"
+            x:Name="Button"
+            Clicked="Button_Clicked"
+            Opacity="{Binding Value}">
+           
+
+        </Button>
+        
+        <Slider
+            
+            x:Name="Slider">
+
+
+        </Slider>
+
+        </StackLayout>
+
+        <Editor 
+            Text=""
+            IsReadOnly="True"
+            BackgroundColor="Black"
+                >
+            
+        </Editor>
+        
+
+    </StackLayout>
+
+</ContentPage>

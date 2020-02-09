@@ -1,0 +1,12 @@
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\bin\Debug\netstandard2.0\MazeRunner.deps.json
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\bin\Debug\netstandard2.0\MazeRunner.dll
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\bin\Debug\netstandard2.0\MazeRunner.pdb
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.csprojAssemblyReference.cache
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.csproj.CoreCompileInputs.cache
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.AssemblyInfoInputs.cache
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.AssemblyInfo.cs
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.dll
+C:\Users\tahoe\source\repos\FirstApp\FirstApp\FirstApp\obj\Debug\netstandard2.0\MazeRunner.pdb
