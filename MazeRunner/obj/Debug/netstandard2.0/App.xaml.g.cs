@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MazeRunner.App.xaml", "App.xaml", typeof(global::FirstApp.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MazeRunner.App.xaml", "App.xaml", typeof(global::MazeRunner.App))]
 
-namespace FirstApp {
+namespace MazeRunner {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]

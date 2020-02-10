@@ -4,7 +4,7 @@ using System.Text;
 
 
 
-namespace FirstApp.GameObjects
+namespace MazeRunner.GameObjects
 {
     class Floor
     {
@@ -36,6 +36,8 @@ namespace FirstApp.GameObjects
 
 
             //Check for Open Doors in adjacnet rooms
+
+            //Check the room above
             if (currentRoom.North == true)
             {
                 
@@ -49,6 +51,8 @@ namespace FirstApp.GameObjects
                 else
                     filler.Add((yCoord - 1).ToString() + xCoord.ToString());
             }
+
+            //Check the room below
             if (currentRoom.South == true)
             {
                 if (floor[yCoord + 1, xCoord].IsGenerated == true)
@@ -60,6 +64,8 @@ namespace FirstApp.GameObjects
                 else
                     filler.Add((yCoord + 1).ToString() + xCoord.ToString());
             }
+
+            //Check the room to the right
             if (currentRoom.East == true)
             {
                 if (floor[yCoord, xCoord + 1].IsGenerated == true)
@@ -71,10 +77,18 @@ namespace FirstApp.GameObjects
                 else
                     filler.Add(yCoord.ToString() + (xCoord + 1).ToString());
             }
+
+            //Check the room to the left
             if (currentRoom.West == true)
             {
-                if (floor[yCoord, xCoord - 1].IsGenerated == false)
-                    filler.Add(yCoord.ToString() + (xCoord- 1).ToString());
+                if (floor[yCoord, xCoord - 1].IsGenerated == true)
+                {
+                    if (floor[yCoord, xCoord - 1].East == false)
+                        currentRoom.West = false;
+                }
+
+                else
+                    filler.Add(yCoord.ToString() + (xCoord - 1).ToString());
             }
         }
 

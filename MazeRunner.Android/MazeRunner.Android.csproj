@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF4E1DFD-6779-4287-BC4E-BD7AA63DF044}</ProjectGuid>
+    <ProjectGuid>{B9C61DEA-BDF2-4F52-BFB6-336BABD5AC6F}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>FirstApp.Droid</RootNamespace>
-    <AssemblyName>FirstApp.Android</AssemblyName>
+    <RootNamespace>MazeRunner.Droid</RootNamespace>
+    <AssemblyName>MazeRunner.Android</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -92,8 +92,8 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FirstApp\MazeRunner.csproj">
-      <Project>{55F65E14-1A78-4739-9D43-FCE0ED17591C}</Project>
+    <ProjectReference Include="..\MazeRunner\MazeRunner.csproj">
+      <Project>{71A6BD1C-B173-4D7E-89F6-418B79D2AD46}</Project>
       <Name>MazeRunner</Name>
     </ProjectReference>
   </ItemGroup>

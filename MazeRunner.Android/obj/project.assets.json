@@ -1074,8 +1074,8 @@
     },
     "MazeRunner/1.0.0": {
       "type": "project",
-      "path": "../FirstApp/MazeRunner.csproj",
-      "msbuildProject": "../FirstApp/MazeRunner.csproj"
+      "path": "../MazeRunner/MazeRunner.csproj",
+      "msbuildProject": "../MazeRunner/MazeRunner.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1095,11 +1095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp.Android\\MazeRunner.Android.csproj",
+      "projectUniqueName": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner.Android\\MazeRunner.Android.csproj",
       "projectName": "MazeRunner.Android",
-      "projectPath": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp.Android\\MazeRunner.Android.csproj",
+      "projectPath": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner.Android\\MazeRunner.Android.csproj",
       "packagesPath": "C:\\Users\\tahoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1116,8 +1116,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp\\MazeRunner.csproj": {
-              "projectPath": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp\\MazeRunner.csproj"
+            "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner\\MazeRunner.csproj": {
+              "projectPath": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner\\MazeRunner.csproj"
             }
           }
         }

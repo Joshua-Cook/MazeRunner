@@ -105,8 +105,8 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "FirstApp.Android.dll" comes first in this list. */
-		"FirstApp.Android.dll",
+		/* We need to ensure that "MazeRunner.Android.dll" comes first in this list. */
+		"MazeRunner.Android.dll",
 		"FormsViewGroup.dll",
 		"MazeRunner.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",

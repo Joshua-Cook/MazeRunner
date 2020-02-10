@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.FirstApp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="FirstApp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="FirstApp" android:theme="@style/MainTheme" android:name="md5082b694118023ea111091340db37fc32.MainActivity">
+  <application android:label="MazeRunner.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="MazeRunner" android:theme="@style/MainTheme" android:name="md58f32eae4e4a4909cc132de2bdd6cffc1.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -13,12 +13,12 @@
     </activity>
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.FirstApp.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.FirstApp" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname" />
       </intent-filter>
     </receiver>
   </application>

@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp\\MazeRunner.csproj",
+      "projectUniqueName": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner\\MazeRunner.csproj",
       "projectName": "MazeRunner",
-      "projectPath": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp\\MazeRunner.csproj",
+      "projectPath": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner\\MazeRunner.csproj",
       "packagesPath": "C:\\Users\\tahoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tahoe\\source\\repos\\FirstApp\\FirstApp\\FirstApp\\obj\\",
+      "outputPath": "C:\\Users\\tahoe\\source\\repos\\MazeRunner\\MazeRunner\\MazeRunner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

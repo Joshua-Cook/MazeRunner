@@ -5,22 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace FirstApp
+namespace MazeRunner
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            Slider.Value = 0.5;
+            dialogAdd("Hello World");
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        public void dialogAdd(string newText)
         {
-            
-            DisplayAlert("Tilte", "The new " + Button.Text, "OK");
+            dialogBox.IsReadOnly = false;
+            dialogBox.Text = newText;
+            dialogBox.IsReadOnly = true;
         }
-
-        
     }
 }

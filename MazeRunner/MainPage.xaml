@@ -1,47 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FirstApp"
-             x:Class="FirstApp.MainPage">
+             xmlns:local="clr-namespace:MazeRunner"
+             x:Class="MazeRunner.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
-        <BoxView BindingContext="{x:Reference Slider}"
-            Color="Green"
-            Opacity="{Binding Value}"
-                 >
+        <!--Controls-->
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            <Editor x:Name="dialogBox"
+                    Text=""
+                    TextColor="White"
+                    IsReadOnly="True"
+                    BackgroundColor="Black"
+                    Opacity="1"
+                    Placeholder="Welcome to Maze Runner!"
+                    PlaceholderColor="White"
+            >
             
-        </BoxView>
+            </Editor>
 
-        <Button BindingContext="{x:Reference Slider}"
-            
-            Text= "{Binding Value, StringFormat=' {0:F2}'}"
-            x:Name="Button"
-            Clicked="Button_Clicked"
-            Opacity="{Binding Value}">
-           
-
-        </Button>
-        
-        <Slider
-            
-            x:Name="Slider">
-
-
-        </Slider>
-
-        </StackLayout>
-
-        <Editor 
-            Text=""
-            IsReadOnly="True"
-            BackgroundColor="Black"
+            <Slider x:Name="dialogSlider"
+                    BackgroundColor="Gray"
+                    ThumbColor="White"
+                    Rotation="90"
                 >
-            
-        </Editor>
-        
 
+            </Slider>
+        </StackLayout>
+        
     </StackLayout>
 
 </ContentPage>
