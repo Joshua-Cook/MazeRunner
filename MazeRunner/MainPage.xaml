@@ -4,31 +4,95 @@
              xmlns:local="clr-namespace:MazeRunner"
              x:Class="MazeRunner.MainPage">
 
-    <StackLayout>
-        <!--Controls-->
 
-        <StackLayout Orientation="Horizontal" VerticalOptions="End">
-            <Editor x:Name="dialogBox"
-                    Text=""
-                    TextColor="White"
-                    IsReadOnly="True"
-                    BackgroundColor="Black"
-                    Opacity="1"
-                    Placeholder="Welcome to Maze Runner!"
-                    PlaceholderColor="White"
-            >
+    <Grid x:Name="Main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--Camera-->
+        <Grid x:Name="Camera" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="4"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" Grid.RowSpan="7"
+                     Color="Green">
+            </BoxView>
+            <!--Movementbuttons-->
             
-            </Editor>
-
-            <Slider x:Name="dialogSlider"
-                    BackgroundColor="Gray"
-                    ThumbColor="White"
-                    Rotation="90"
-                >
-
-            </Slider>
-        </StackLayout>
+            <Button x:Name="MoveUp" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                    Opacity=".4"
+                    Text="Move Up"
+                    Clicked="MoveUp_Clicked">
+            </Button>
+            <Button x:Name="MoveDown" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="5"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                    Opacity=".4"
+                    Clicked="MoveDown_Clicked"></Button>
+            <Button x:Name="MoveRight" Grid.Column="6" Grid.Row="1" Grid.RowSpan="5"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                    Opacity=".4"
+                    Clicked="MoveRight_Clicked"></Button>
+            <Button x:Name="MoveLeft" Grid.Column="0" Grid.Row="1" Grid.RowSpan="5"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                    Opacity=".4"
+                    Clicked="MoveLeft_Clicked"></Button>
+        </Grid>
+        <!--Stat Window-->
+        <Label Grid.Column="6" Grid.Row="0" Grid.ColumnSpan="3"
+                HorizontalOptions="CenterAndExpand"
+                Text="HUD"></Label>
+            <!--HUD-->
+            <!--Status-->
+            <!--Controls-->
+        <Button x:Name="Textbutton" Grid.Column="6" Grid.Row="4" Grid.ColumnSpan="3"
+                HorizontalOptions="Center"
+                Clicked="MiddleButton_Clicked"
+                Text="Dialog"
+                ></Button>
+        <!--DialogBox-->
+        <Label x:Name="dialogBox" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="6" Grid.RowSpan="2"
+               HorizontalOptions="StartAndExpand"
+               VerticalOptions="EndAndExpand"
+               TextColor="White"
+               FontSize="Micro"
+               BackgroundColor="Black"></Label>
         
-    </StackLayout>
 
+
+
+
+
+    </Grid>
 </ContentPage>
